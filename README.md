@@ -1,2 +1,2 @@
-# repos-gabrielle
-Repositório de projetos de Gabrielle Alves, Front End Developer
+# Desafio-papodedev
+Repositório com Desafio proposto por papodedev, desenvolvido por Gabrielle Alves, Front End Developer
