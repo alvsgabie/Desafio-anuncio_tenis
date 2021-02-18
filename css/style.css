@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-font: #eeeeee;
+}
+
+body{
+    background-color: #353f4b;
+}
+body,
+html {
+    height: 100%;
+}
+
+#background {
+
+    filter: blur(10px);
+    /* -webkit-filter: blur(8px); */
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.bg-red{
+    background: url("../img/BG-nike-red.jpg");
+}
+.bg-blue{
+    background: url("../img/BG-nike-blue.jpg");
+}
+.bg-green{
+    background: url("../img/BG-nike-green.jpg");
+}
+.anuncio {
+    position: absolute;
+    width: 263px;
+    height: 386px;
+    left: 0;
+    right: 0;
+    top: 20%;
+    margin:0 auto;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 16px 50px 16px 16px;
+    padding: 21px;
+    box-sizing: border-box;
+}
+
+.anuncio__header {
+    grid-area: header;
+}
+
+#anuncio__tenis {
+    position: absolute;
+    width: 321px;
+    height: 321px;
+    top: -180px;
+    left: -20px;
+        transition: 1s;
+}
+
+#anuncio__tenis:hover{
+    transform: translate(10px,-10px);
+    transition: 1s;
+}
+.red{
+    background-image: url("../img/red.svg");
+}
+
+.green{
+    background-image: url("../img/green.svg");
+}
+
+.blue{
+    background-image: url("../img/blue.svg");
+}
+
+.anuncio__main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.anuncio__marca {
+    width: 41px;
+    height: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-font);
+}
+
+.anuncio__titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--color-font);
+}
+
+.anuncio__valor {
+    align-self: flex-end;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #bbbbbb;
+}
+
+.valor {
+    font-family: Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--color-font);
+}
+
+.anuncio__footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: "footer";
+    grid-template-rows: 1fr;
+    grid-template-columns: 70% 30%;
+}
+
+.footer--selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.anuncio__cores {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.anuncio__cores___titulo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-font);
+}
+
+.anuncio__container___cores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    height: 30px;
+    align-items: center;
+}
+
+.cores--verde {
+    background-color: green;
+}
+
+.cores--vermelho {
+    background-color: red;
+}
+
+.cores--azul {
+    background-color: blue;
+}
+
+.cores--config {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+}
+
+.cores--config:hover,
+.cores--config-active{
+    border: 1px solid #fff;
+}
+
+.anuncio__tamanhos {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.anuncio__tamanhos___titulos {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-font);
+}
+
+.anuncio__container___tamanhos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    height: 30px;
+}
+
+.tamanho--config {
+    position: static;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background: none;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: var(--color-font);
+    width: 23px;
+    height: 23px;
+}
+
+.active,
+.tamanho--config:hover{
+    position: relative;
+    color: #363636;
+    background: #fff;
+    padding: 2px;
+}
+
+.footer--selection {
+    grid-area: footer;
+}
+
+.footer--shopping {
+    /* grid-area: shopping; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: center;
+}
+
+.anuncio__carrinho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    background-color: green;
+    border-radius: 8px;
+    transition: 1s;
+}
+.anuncio__carrinho:hover{
+opacity: .6;
+}
+
+.seta--carrinho:nth-child(1),
+.seta--carrinho:nth-child(2),
+.seta--carrinho:nth-child(3) {
+    background-image: url("../img/expand_more_24px.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8px;
+    width: 12px;
+}
+
+.seta--carrinho:nth-child(1) {
+    opacity: .4
+}
+
+.seta--carrinho:nth-child(2) {
+    opacity: .6;
+}
+
+.img--carrinho {
+    background-image: url("../img/local_grocery_store_24px.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20px;
+    width: 22px;
+}

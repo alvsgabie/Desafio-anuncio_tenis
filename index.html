@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tenis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="background" class="bg-green"></div>
+    <div class="anuncio">
+        <div class="anuncio__header">
+            <div id="anuncio__tenis" class="green"></div>
+        </div>
+        <div class="anuncio__main">
+            <p class="anuncio__marca">Nike</p>
+            <p class="anuncio__titulo">Epic Ract<br>Flyknit 2</p>
+            <p class="anuncio__valor">R$ <span class="valor">359,00</span></p>
+        </div>
+        <div class="anuncio__footer">
+            <div class="footer--selection">
+                <div class="anuncio__cores">
+                    <p class="anuncio__cores___titulo">Cores</p>
+                    <div id="anuncio__container___cores" class="anuncio__container___cores">
+                        <button class="cores--verde cores--config cores--config-active " onclick="EscolherCor('verde')"></button>
+                        <button class="cores--vermelho cores--config " onclick="EscolherCor('vermelho')"></button>
+                        <button class="cores--azul cores--config " onclick="EscolherCor('azul')"></button>
+                    </div>
+                </div>
+                <div class="anuncio__tamanhos">
+                    <p class="anuncio__tamanhos___titulos">Tamanhos</p>
+                    <div id="anuncio__container___tamanhos" class="anuncio__container___tamanhos">
+                        <button class="tamanho--37 tamanho--config active">37</button>
+                        <button class="tamanho--38 tamanho--config">38</button>
+                        <button class="tamanho--39 tamanho--config">39</button>
+                        <button class="tamanho--40 tamanho--config">40</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer--shopping">
+                <div class="anuncio__carrinho">
+                    <div class="setas--carrinho">
+                        <div class="seta--carrinho"></div>
+                        <div class="seta--carrinho "></div>
+                        <div class="seta--carrinho"></div>
+                    </div>
+                    <div class="img--carrinho"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
